@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { Navbar } from '@/components/layout/Navbar';
 import { apiFetch } from '@/lib/api';
@@ -9,14 +10,15 @@ import { useAuthStore } from '@/stores/auth-store';
 import { User } from '@/types';
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const { setUser } = useAuthStore();
+  const router = useRouter();
+  const { user, setUser } = useAuthStore();
 
   useEffect(() => {
     // Fetch active session user info
     apiFetch<User>('/auth/me')
-      .then((user) => setUser(user))
+      .then((fetchedUser) => setUser(fetchedUser))
       .catch(() => {
-        // Fallback user state for smooth dev experience
+        // Fallback demo user if backend is spinning up or offline
         setUser({
           id: 'admin-id',
           name: 'Administrador B2B',

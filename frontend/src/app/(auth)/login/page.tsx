@@ -55,7 +55,7 @@ export default function LoginPage() {
 
       setUser(response.user);
       toast.success('Bem-vindo ao B2B Flow!');
-      window.location.href = '/';
+      router.push('/');
     } catch (error: unknown) {
       toast.error((error as Error).message || 'Erro ao realizar login');
     } finally {

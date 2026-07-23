@@ -2,21 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  const token = request.cookies.get('access_token')?.value;
-  const { pathname } = request.nextUrl;
-
-  const isAuthPage = pathname.startsWith('/login');
-
-  if (!token && !isAuthPage) {
-    const loginUrl = new URL('/login', request.url);
-    loginUrl.searchParams.set('from', pathname);
-    return NextResponse.redirect(loginUrl);
-  }
-
-  if (token && isAuthPage) {
-    return NextResponse.redirect(new URL('/', request.url));
-  }
-
+  // Allow all requests to pass through. Protection is handled dynamically in client layout/store.
   return NextResponse.next();
 }
 
