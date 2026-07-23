@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { Navbar } from '@/components/layout/Navbar';
 import { apiFetch } from '@/lib/api';
@@ -10,8 +9,7 @@ import { useAuthStore } from '@/stores/auth-store';
 import { User } from '@/types';
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
-  const router = useRouter();
-  const { user, setUser } = useAuthStore();
+  const { setUser } = useAuthStore();
 
   useEffect(() => {
     // Fetch active session user info
