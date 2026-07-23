@@ -114,4 +114,5 @@ Para facilitar a avaliação da aplicação em ambiente local, utilize as creden
 ## Deploy e Infraestrutura
 
 - Front-End: Pronto para deploy na Vercel apontando para o diretório `frontend`.
-- Back-End: Pronto para deploy no Railway ou serviços equivalentes apontando para a pasta `backend/src/B2BFlow.API`.
+- Back-End: Pronto para deploy gratuito no Render.com (ou Koyeb/Fly.io) apontando para a pasta `backend/src/B2BFlow.API`.
+- Banco de Dados: Integrado com PostgreSQL gratuito do Render.com ou Neon.tech.
