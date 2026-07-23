@@ -67,7 +67,6 @@ builder.Services.AddAuthentication(options =>
     {
         OnMessageReceived = context =>
         {
-            // Read token from HTTP-Only cookie if present
             if (context.Request.Cookies.TryGetValue("access_token", out var token))
             {
                 context.Token = token;
@@ -84,22 +83,20 @@ builder.Services.AddAuthorization(options =>
     options.AddPolicy("ManagerOrAbove", policy => policy.RequireRole("Admin", "Manager"));
 });
 
-// 5. CORS for Vercel Frontend & Dev
+// 5. Dynamic CORS Policy for Vercel Frontend & Dev
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("VercelFrontendPolicy", policy =>
     {
-        policy.WithOrigins(
-                builder.Configuration["Cors:FrontendUrl"] ?? "http://localhost:3000",
-                "http://localhost:3000",
-                "https://localhost:3000"
-            )
-            .SetIsOriginAllowed(origin => 
-                origin.EndsWith(".vercel.app") || 
-                origin.StartsWith("http://localhost"))
-            .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials(); // Essential for HTTP-Only cookies
+        policy.SetIsOriginAllowed(origin =>
+        {
+            if (string.IsNullOrWhiteSpace(origin)) return false;
+            var host = new Uri(origin).Host;
+            return host.EndsWith("vercel.app") || host == "localhost" || host == "127.0.0.1";
+        })
+        .AllowAnyHeader()
+        .AllowAnyMethod()
+        .AllowCredentials(); // Required for HTTP-Only cookies
     });
 });
 
@@ -108,11 +105,8 @@ var app = builder.Build();
 // Configure Middleware Pipeline
 app.UseMiddleware<ExceptionMiddleware>();
 
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+app.UseSwagger();
+app.UseSwaggerUI();
 
 app.UseRouting();
 app.UseCors("VercelFrontendPolicy");
