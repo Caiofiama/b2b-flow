@@ -1,0 +1,11 @@
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\bin\Debug\net8.0\B2BFlow.Domain.deps.json
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\bin\Debug\net8.0\B2BFlow.Domain.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\bin\Debug\net8.0\B2BFlow.Domain.pdb
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\obj\Debug\net8.0\B2BFlow.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\obj\Debug\net8.0\B2BFlow.Domain.AssemblyInfoInputs.cache
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\obj\Debug\net8.0\B2BFlow.Domain.AssemblyInfo.cs
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\obj\Debug\net8.0\B2BFlow.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\obj\Debug\net8.0\B2BFlow.Domain.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\obj\Debug\net8.0\refint\B2BFlow.Domain.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\obj\Debug\net8.0\B2BFlow.Domain.pdb
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Domain\obj\Debug\net8.0\ref\B2BFlow.Domain.dll

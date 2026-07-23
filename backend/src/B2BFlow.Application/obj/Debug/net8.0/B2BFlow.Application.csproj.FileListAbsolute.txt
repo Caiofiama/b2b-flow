@@ -1,0 +1,15 @@
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\bin\Debug\net8.0\B2BFlow.Application.deps.json
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\bin\Debug\net8.0\B2BFlow.Application.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\bin\Debug\net8.0\B2BFlow.Application.pdb
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\bin\Debug\net8.0\B2BFlow.Domain.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\bin\Debug\net8.0\B2BFlow.Domain.pdb
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\B2BFlow.Application.csproj.AssemblyReference.cache
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\B2BFlow.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\B2BFlow.Application.AssemblyInfoInputs.cache
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\B2BFlow.Application.AssemblyInfo.cs
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\B2BFlow.Application.csproj.CoreCompileInputs.cache
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\B2BFlow..08FA3135.Up2Date
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\B2BFlow.Application.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\refint\B2BFlow.Application.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\B2BFlow.Application.pdb
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Application\obj\Debug\net8.0\ref\B2BFlow.Application.dll

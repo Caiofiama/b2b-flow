@@ -1,0 +1,17 @@
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\B2BFlow.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\B2BFlow.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\B2BFlow.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\B2BFlow.Infrastructure.AssemblyInfo.cs
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\B2BFlow.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\bin\Debug\net8.0\B2BFlow.Infrastructure.deps.json
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\bin\Debug\net8.0\B2BFlow.Infrastructure.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\bin\Debug\net8.0\B2BFlow.Infrastructure.pdb
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\bin\Debug\net8.0\B2BFlow.Application.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\bin\Debug\net8.0\B2BFlow.Domain.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\bin\Debug\net8.0\B2BFlow.Application.pdb
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\bin\Debug\net8.0\B2BFlow.Domain.pdb
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\B2BFlow..FD91E288.Up2Date
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\B2BFlow.Infrastructure.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\refint\B2BFlow.Infrastructure.dll
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\B2BFlow.Infrastructure.pdb
+C:\Users\Caio fiama\ProjectB2B\backend\src\B2BFlow.Infrastructure\obj\Debug\net8.0\ref\B2BFlow.Infrastructure.dll
