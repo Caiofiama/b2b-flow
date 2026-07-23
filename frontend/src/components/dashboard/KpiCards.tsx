@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Users, CheckCircle2, TrendingUp, DollarSign } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { KpiSummary } from '@/types';
@@ -8,9 +8,10 @@ import { formatCurrency } from '@/lib/utils';
 
 interface KpiCardsProps {
   kpis?: KpiSummary;
+  selectedMonth?: string | null;
 }
 
-export function KpiCards({ kpis }: KpiCardsProps) {
+export function KpiCards({ kpis, selectedMonth }: KpiCardsProps) {
   const cards = [
     {
       title: 'Total de Clientes',
@@ -46,29 +47,44 @@ export function KpiCards({ kpis }: KpiCardsProps) {
     <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
       {cards.map((card, index) => {
         const Icon = card.icon;
+        const animationKey = `${card.title}-${card.value}-${selectedMonth || 'all'}`;
+
         return (
-          <motion.div
-            key={card.title}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-          >
-            <Card className={`relative overflow-hidden bg-gradient-to-b ${card.color}`}>
-              <CardContent className="p-6">
-                <div className="flex items-center justify-between">
-                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
-                    {card.title}
-                  </span>
-                  <div className={`p-2.5 rounded-xl ${card.iconBg}`}>
-                    <Icon className="h-5 w-5" />
+          <AnimatePresence mode="wait" key={card.title}>
+            <motion.div
+              key={animationKey}
+              initial={{ scale: 0.95, opacity: 0.7 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.25, delay: index * 0.05 }}
+            >
+              <Card
+                className={`relative overflow-hidden bg-gradient-to-b ${card.color} ${
+                  selectedMonth ? 'ring-1 ring-blue-500/40 shadow-lg shadow-blue-500/10' : ''
+                }`}
+              >
+                <CardContent className="p-6">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-semibold uppercase tracking-wider text-slate-400">
+                      {card.title}
+                    </span>
+                    <div className={`p-2.5 rounded-xl ${card.iconBg}`}>
+                      <Icon className="h-5 w-5" />
+                    </div>
                   </div>
-                </div>
-                <div className="mt-4 text-2xl font-bold text-white tracking-tight">
-                  {card.value}
-                </div>
-              </CardContent>
-            </Card>
-          </motion.div>
+                  <div className="mt-4 flex items-baseline justify-between">
+                    <span className="text-2xl font-extrabold text-white tracking-tight">
+                      {card.value}
+                    </span>
+                    {selectedMonth && (
+                      <span className="text-[10px] font-bold text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded-full border border-blue-500/20">
+                        {selectedMonth}
+                      </span>
+                    )}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </AnimatePresence>
         );
       })}
     </div>
