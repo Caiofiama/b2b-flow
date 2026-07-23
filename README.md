@@ -9,22 +9,6 @@ O projeto combina um front-end moderno construído em Next.js 14 com um back-end
 
 ---
 
-## Telas da Aplicação
-
-### Dashboard & Analytics de Vendas
-![Dashboard B2B Flow](docs/screenshots/dashboard.png)
-
-### Gestão de Clientes (CRUD & Busca)
-![Gestão de Clientes](docs/screenshots/clients.png)
-
-### Assistente Comercial com IA (Gerador de Follow-up)
-![Assistente de IA](docs/screenshots/ai_drawer.png)
-
-### Funil de Vendas Kanban (Drag-and-Drop)
-![Pipeline Kanban](docs/screenshots/pipeline.png)
-
----
-
 ## Visão Geral da Arquitetura
 
 O sistema foi estruturado seguindo os princípios de Clean Architecture e separação de responsabilidades.
