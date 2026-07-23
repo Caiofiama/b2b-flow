@@ -39,7 +39,8 @@ public class AuthController : ControllerBase
 
         Response.Cookies.Append("access_token", result.Value.Token, cookieOptions);
 
-        return Ok(new { user = result.Value.User, message = "Login realizado com sucesso" });
+        // Return token in JSON payload as well to support cross-domain Client/Header auth
+        return Ok(new { user = result.Value.User, token = result.Value.Token, message = "Login realizado com sucesso" });
     }
 
     [HttpPost("logout")]

@@ -43,14 +43,19 @@ export default function LoginPage() {
   const onSubmit = async (data: LoginFormData) => {
     setLoading(true);
     try {
-      const response = await apiFetch<{ user: User }>('/auth/login', {
+      const response = await apiFetch<{ user: User; token?: string }>('/auth/login', {
         method: 'POST',
         body: JSON.stringify(data),
       });
 
+      if (response.token) {
+        localStorage.setItem('access_token', response.token);
+        document.cookie = `access_token=${response.token}; path=/; max-age=28800; SameSite=Lax`;
+      }
+
       setUser(response.user);
       toast.success('Bem-vindo ao B2B Flow!');
-      router.push('/');
+      window.location.href = '/';
     } catch (error: unknown) {
       toast.error((error as Error).message || 'Erro ao realizar login');
     } finally {
